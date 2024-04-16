@@ -1,6 +1,4 @@
 'use client'
-
-import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation';
 import { Input, Link, Button } from '@nextui-org/react';
 
@@ -10,22 +8,12 @@ const SignUp = () => {
   const handleLogin = () => {
     router.push('/auth/login');
   };
-  // const [isClient, setIsClient] = useState(false)
-  // useEffect(() => {
-  //   setIsClient(true)
-  // }, [])
-  // if(!isClient){
-  //   return null;
-  // }
   return (
     <div className='w-full h-screen flex flex-col lg:flex-row items-start'>
 
-  {/* Video Section */}
   <div className='relative w-full lg:w-1/2 h-72 lg:h-full'>
     <video className='w-full h-full object-cover' src="/videos/presentation.mp4" autoPlay loop muted></video>
   </div>
-
-  {/* Form Section */}
   <div className='w-full lg:w-1/2 h-full bg-background flex flex-col justify-center items-center pt-10 lg:p-20 lg:justify-between'>
     
     <div className='w-full flex flex-col max-w-[500px]'>

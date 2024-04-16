@@ -1,6 +1,4 @@
 'use client'
-
-// import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation';
 import { Input, Link, Button } from '@nextui-org/react';
 const colors={
@@ -15,13 +13,7 @@ const Login = () => {
   const handleSignUp = () => {
     router.push('/auth/signup');
   };
-  // const [isClient, setIsClient] = useState(false)
-  // useEffect(() => {
-  //   setIsClient(true)
-  // }, [])
-  // if(!isClient){
-  //   return null;
-  // }
+
   return (
     <div className='w-full h-screen flex flex-col lg:flex-row items-start'>
 
