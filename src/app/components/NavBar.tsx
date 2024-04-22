@@ -3,21 +3,13 @@ import React, { useState,ReactNode }   from 'react';
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
 } from '@ant-design/icons';
-import { Button, Layout, Menu, theme } from 'antd';
-import  Searchbar from 'framework7-react';
-import DataChart from './lineCart';
-import {SearchIcon} from './SearchIcon'
+import { Button, Layout, Menu } from 'antd';
+import {icons} from './icons'
 const { Header, Sider, Content } = Layout;
 import {Input} from "@nextui-org/react";
 import {CodeSandboxOutlined,DashboardOutlined,ShoppingCartOutlined,TeamOutlined,MailOutlined,CustomerServiceOutlined} from "@ant-design/icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { color } from 'framer-motion';
-import { faMagnifyingGlass,faUser ,faMoneyBill,faChartSimple,faPercent,faSquarePollVertical,faEnvelopesBulk,faPeopleGroup,faHeadset} from '@fortawesome/free-solid-svg-icons';
-import TopProd from './topProd';
+
 interface CustomTheme {
   token: {
     colorBgContainer: string;
@@ -109,7 +101,7 @@ const NavBar: React.FC <NavBarProps>= ({ children, rows }: NavBarProps) => {
           }}
           placeholder="Type to search..."
           size="sm"
-          startContent={<SearchIcon size={18} />}
+          startContent={<icons.SearchIcon size={18} />}
           type="search"
         />
         </div>
