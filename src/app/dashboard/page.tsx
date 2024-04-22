@@ -8,7 +8,7 @@ import {faMoneyBill,faChartSimple,faPercent,faPeopleGroup} from '@fortawesome/fr
 const Dashboard= () => {
     return (
        <>
-       <NavBar>
+       <NavBar rows={1020} >
         <h1 className='font-normal text-start text-3xl'>Dashboard</h1>
         <p className='font-normal text-start ml-2 text-medium'>welcome to your dashboard</p>
         <div className='sm:inline lg:flex justify-start'>

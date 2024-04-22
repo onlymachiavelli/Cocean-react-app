@@ -27,8 +27,9 @@ interface CustomTheme {
 }
 interface NavBarProps {
   children: ReactNode;
+  rows:number;
 }
-const NavBar: React.FC <NavBarProps>= ({ children }) => {
+const NavBar: React.FC <NavBarProps>= ({ children, rows }: NavBarProps) => {
   const [collapsed, setCollapsed] = useState(false);
   const customTheme: CustomTheme = {
     token: {
@@ -117,7 +118,7 @@ const NavBar: React.FC <NavBarProps>= ({ children }) => {
           style={{
             margin: '24px 16px',
             padding: 24,
-            height:1020,
+            height: rows >= 15 ? 1360 : rows >= 10 ? 1130 : 900,
             background: customTheme.token.colorBgContainer,
             borderRadius: customTheme.token.borderRadiusLG,
           }}
