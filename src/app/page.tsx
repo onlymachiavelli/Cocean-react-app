@@ -1,12 +1,8 @@
-"use client"
-import {} from "react"
-import { Button } from "@nextui-org/react"
+'use client'
 const App = () => {
   return (
-    <>
-      <Button color="danger">Kill this bitch</Button>
-    </>
-  )
-}
+      <></>
+  );
+};
 
-export default App
+export default App;
