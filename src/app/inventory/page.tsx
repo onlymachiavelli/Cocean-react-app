@@ -1,13 +1,19 @@
 "use client"
-
-import React from "react";
-import {InventoryContainer,InventoryTabs,  
-    //InvetoryLayout  
-    ListMenu} from '@/components/molecules'
-import {Switch} from "@nextui-org/react";
-
+import { SideBar } from "@/components/molecules"
 const Page = () => {
-    return (
+  return (
+    <>
+      <main className="w-full h-auto min-h-screen flex items-center justify-center">
+        <SideBar />
+      </main>
+    </>
+  )
+}
+
+export default Page
+/*
+
+
         <div className="w-full relative bg-grey-grey-50 h-[1469px] overflow-hidden text-left text-base text-grey-grey-400 font-body-l-medium">
             <div className="absolute top-0 left-[280px] bg-default-white box-border w-[11605px] h-[100px] border-[1px] border-solid border-whitesmoke-200" />
             <div className="absolute top-[28px] left-[280px] w-[1160px] flex flex-row items-center justify-between py-0 px-8 box-border">
@@ -45,34 +51,32 @@ const Page = () => {
                                 homeIconOverflow="unset"
                                 textColor="#5d6679"
                             />
-                            {/* Add other ListMenu components */}
+                            </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-start justify-start gap-[12px]">
+                            <ListMenu
+                                home="/settings.svg"
+                                text="Settings"
+                                listMenuAlignSelf="unset"
+                                listMenuWidth="232px"
+                                homeIconOverflow="hidden"
+                                textColor="#5d6679"
+                            />
+                            <ListMenu
+                                home="/log-out.svg"
+                                text="Log Out"
+                                listMenuAlignSelf="unset"
+                                listMenuWidth="232px"
+                                homeIconOverflow="hidden"
+                                textColor="#5d6679"
+                            />
                         </div>
                     </div>
+                    <div className="absolute top-[334px] left-[303px] bg-default-white w-[116px] h-14 flex flex-col items justify-end">
+                        <InventoryTabs />
+                    </div>
                 </div>
-                <div className="flex flex-col items-start justify-start gap-[12px]">
-                    <ListMenu
-                        home="/settings.svg"
-                        text="Settings"
-                        listMenuAlignSelf="unset"
-                        listMenuWidth="232px"
-                        homeIconOverflow="hidden"
-                        textColor="#5d6679"
-                    />
-                    <ListMenu
-                        home="/log-out.svg"
-                        text="Log Out"
-                        listMenuAlignSelf="unset"
-                        listMenuWidth="232px"
-                        homeIconOverflow="hidden"
-                        textColor="#5d6679"
-                    />
-                </div>
-            </div>
-            <div className="absolute top-[334px] left-[303px] bg-default-white w-[116px] h-14 flex flex-col items justify-end">
-                <InventoryTabs />
-            </div>
-        </div>
-    );
-};
+        
 
-export default Page;
+*/
